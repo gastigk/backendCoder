@@ -46,7 +46,7 @@ class ProductManager {
   };
 
   // agregar productos
-  addProduct = (title, description, price, thumbnail, code, stock) => {
+  addProduct = ({title, description, price, thumbnail, code, stock}) => {
     if (this.#isCodeRepeated(code)) {
       console.error("Error: code already exists");
       return;
@@ -116,14 +116,14 @@ const manager = new ProductManager("products.json");
 manager.getProductById(2);
 
 // agregar producto
-manager.addProduct(
-  "Nuevo producto de prueba agregado",
-  "Este es un nuevo producto de prueba",
-  "200",
-  "sin imagen",
-  "d123",
-  25
-);
+manager.addProduct({
+  title: "Nuevo producto de prueba agregado",
+  description: "Este es un nuevo producto de prueba",
+  price: "200",
+  thumbnail: "sin imagen",
+  code: "d123",
+  stock: 25
+});
 
 // modificar dato en producto por ID
 manager.updateProduct(3, { title: "Nombre de producto modificado" });
