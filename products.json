@@ -5,7 +5,7 @@
 		"description": "Este es un producto prueba",
 		"price": "200",
 		"thumbnail": "sin imagen",
-		"code": "a123",
+		"code": "a456",
 		"stock": 25
 	},
 	{
@@ -55,7 +55,7 @@
 	},
 	{
 		"id": 7,
-		"title": "Producto prueba VI",
+		"title": "Producto prueba VII",
 		"description": "Este es un producto prueba",
 		"price": "200",
 		"thumbnail": "sin imagen",
